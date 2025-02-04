@@ -186,7 +186,7 @@
     </section>
 
     
-    <section class="contact" id="contact">
+<!--     <section class="contact" id="contact">
         <h2 class="heading">Contact <span class="logo" style="color: rgb(252, 100, 62)">Me</span></h2>
         <form action="">
             <div class="input-group">
@@ -204,7 +204,39 @@
                 </div>
             </div>
         </form>
+    </section> -->
+
+
+<section class="contact" id="contact">
+        <h2 class="heading">Contact <span class="logo" style="color: rgb(252, 100, 62)">Me</span></h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="4d9ddc0c-8e09-4ee9-ab6b-a34ef576eba3">
+    
+            <div class="input-group">
+                <div class="input-box">
+                    <!-- Replace name attributes for Web3Forms -->
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="e-mail" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="input-group2">
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </div>
+    
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+            <!-- Optional: Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        </form>
     </section>
+
     <footer class="footer">
         <div class="social">
             <a href="#"><i class='bx bxl-linkedin-square'></i></a>
